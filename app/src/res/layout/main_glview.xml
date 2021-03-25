@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swiprefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/planetbg"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/gltoolb"
+            layout="@layout/toolbglw" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/siteparam"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="70dp"
+                android:layout_weight="1"
+                android:fadeScrollbars="true" />
+        </HorizontalScrollView>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>
